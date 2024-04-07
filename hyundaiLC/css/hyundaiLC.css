@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* 현대LC pc */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* Noto Sans KR 구글폰트 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 1px solid darkblue;
+}
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+}
