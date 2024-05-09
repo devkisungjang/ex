@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* crecendo pc */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* Noto Sans KR 구글폰트 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: solid 1px blue; */
+}
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  min-width: 1280px;
+}
+
+.one {
+  background-image: url(/ex/images/crecendo/crecendo01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 830px;
+  padding: 0px 240px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.one .inner {
+  width: 960px;
+  gap: 20px;
+  padding-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one > .inner h1 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 20px;
+}
+
+.one > .inner h2 {
+  color: #009882;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.one > .inner p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.one > .inner a {
+  background: #009882;
+  color: white;
+  padding: 14px 64px;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: none;
+}
+
+.two {
+  height: 830px;
+  display: flex;
+}
+
+.two .left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.two .right {
+  width: 50%;
+  background: #009882;
+}
+
+.two .left .inner600 {
+  width: 600px;
+  /* gap: 22px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 150px;
+  position: relative;
+}
+
+.two .right .inner600 {
+  width: 600px;
+  gap: 20px;
+  padding: 220px 0 0 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.two .left .inner600 h2,
+.two .right .inner600 h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.two .right .inner600 h2 {
+  color: white;
+}
+
+.two .right .inner600 h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+.two .right .inner600 p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.two .right .inner600 p:last-child {
+  padding-top: 10px;
+}
+
+.two .left .inner600 img {
+  position: absolute;
+  top: 220px;
+}
+
+.three {
+  height: 756px;
+  display: flex;
+}
+
+.three .left {
+  background: #f4f4f4;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 100px;
+}
+
+.three .right {
+  width: 50%;
+}
+
+.three .left .inner600,
+.three .right .inner600 {
+  width: 600px;
+  height: 470px;
+}
+
+.three .left .inner600 {
+  background-image: url(/ex/images/crecendo/crecendo03.jpeg);
+  background-size: 600px 470px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: space-between;
+}
+
+.three .left .inner600 h3 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 30px;
+  font-weight: 600;
+  padding: 40px 0 0 40px;
+}
+
+.three .left .inner600 a {
+  /* 박스 사이즈 지정 */
+  width: 200px;
+  height: 45px;
+  margin: 0 40px 40px 0;
+
+  /* 텍스트 가운데 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #fff;
+
+  /* 하이퍼링크 밑줄 없애기 */
+  text-decoration: none;
+
+  /* 위치 지정 */
+  background: transparent;
+  align-self: flex-end;
+}
+
+.three .left .inner600 a span {
+  color: #009882;
+}
+
+.three .right .inner600 {
+  background-image: url(/ex/images/crecendo/crecendo04.jpeg);
+  background-size: 600px 470px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.three .right h2 {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 40px 0 80px 0;
+}
+
+.three .right .inner600 h3 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 30px;
+  font-weight: 600;
+  padding: 40px 0 0 40px;
+}
+
+.three .right .inner600 a {
+  width: 200px;
+  height: 45px;
+  margin: 0 40px 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #009882;
+  color: #fff;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.four {
+  background-image: url(/ex/images/crecendo/crecendo05.png);
+  background-size: cover;
+  display: flex;
+  padding: 0px 240px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four .inner {
+  width: 960px;
+  padding-top: 130px;
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four .inner h2 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.four .inner p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.four .inner a {
+  color: #fff;
+  background-color: #009882;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* 롯데칠성 pc */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* Noto Sans KR 구글폰트 */
+
+section:nth-child(1) .inner {
+  width: 100%;
+  padding: 50px 40px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2,
+h3 {
+  font-size: 25px;
+  line-height: 1;
+}
+
+section:nth-child(1) p span:last-child {
+  display: none;
+}
+
+section:nth-child(2) .inner {
+  width: 100%;
+  padding: 50px 40px;
+  gap: 20px;
+}
+
+section:nth-child(2) .inner > div {
+  flex-direction: column;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 33%;
+}

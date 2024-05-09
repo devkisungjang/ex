@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* daily pc */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* Noto Sans KR 구글폰트 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+/* font-awsome v6.5.2 */
+
+/* 애스터리크로 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid blue; */
+}
+
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  min-width: 1280px;
+  padding: 0px 136px;
+  gap: 10px;
+}
+
+.inner {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.inner > .sec01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 30px;
+}
+
+.sec01 a {
+  color: #000;
+  width: 155px;
+  height: 61px;
+  position: relative;
+  font-size: 45px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.sec01 .logo::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  display: block;
+  left: -14px;
+}
+
+.sec01 div {
+  color: #666;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* 가상요소 선택자
+::before - 요소 내용 앞쪽에 새 컨텐츠 추가
+::after - 요소 내용 끝에 새 컨텐츠 추가 */
+.inner > .sec01 .copy::before,
+.inner > .sec01 .copy::after {
+  font-size: 1.2rem;
+  color: #ddd;
+  position: relative;
+  top: -10px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+
+  /* 부모의 색상을 상속 */
+  color: inherit;
+}
+
+/* 시작 큰 따옴표 유니코드로 삽입 */
+.inner > .sec01 .copy::before {
+  content: "\f10d";
+}
+
+/* 끝 큰 따옴표 유니코드로 삽입 */
+.inner > .sec01 .copy::after {
+  content: "\f10e";
+}
+
+.sec02 {
+  gap: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-self: stretch; */
+}
+
+.sec02 .art {
+  width: 290px;
+  height: 230px;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sec02 .art h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.sec02 .art p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.sec02 .art .tag {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sec02 button {
+  padding: 5px 10px;
+}
+
+.sec02 .art01 {
+  background-image: url(/ex/images/daily/art01.png);
+
+  /* 백그라운드 이미지 대체 텍스트 화면에서 없애기 */
+  text-indent: -99999px;
+}
+
+.art02 {
+  background-color: red;
+}
+.art02 h2,
+p,
+a {
+  color: white;
+}
+
+.art02 button {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.art03 {
+  background: #f5f6f7;
+  margin: 0 20px;
+}
+
+.art03 h2 {
+  color: #666;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.art04 {
+  background-image: url(/ex/images/daily/art04.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.art04 h2 {
+  color: white;
+}
+
+.art04 button {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.art05 {
+  background: #f5f6f7;
+}
+
+.art05 h2,
+.art05 p,
+.art05 button {
+  color: #666;
+}
+
+.art05 button {
+  border: 1px solid #c4c4c4;
+}
+
+/* .art06으로 선택자 지정 했을때 css 안먹힘.
+앞에 .art나 .sec02도 같이 넣어줘야 먹힘 */
+.art.art06 {
+  width: 600px;
+  height: 230px;
+  background-image: url(/ex/images/daily/art06.png);
+  margin: 0 20px 0 0;
+  text-indent: -99999px;
+}
+
+.art07 {
+  background-image: url(/ex/images/daily/art07.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.art07 h2 {
+  color: white;
+}
+
+.art07 button {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.art08 {
+  background-image: url(/ex/images/daily/art08.png);
+  text-indent: -99999px;
+}
+
+.art09 {
+  background: #f5f6f7;
+}
+
+.art09 h2,
+.art09 p {
+  color: #646464;
+}
+
+.art09 button {
+  color: #646464;
+  border: 1px solid #c4c4c4;
+}
+
+.art10 {
+  background-image: url(/ex/images/daily/art10.png);
+}
+
+.art10 h2 {
+  color: white;
+}
+
+.art10 {
+  margin: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.art10 button {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.art11 {
+  text-align: center;
+  gap: 10px;
+  background: #f5f6f7;
+  color: #666;
+}
